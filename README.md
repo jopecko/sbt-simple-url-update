@@ -1,6 +1,8 @@
 sbt-simple-url-update
 ==========
 
+[![](https://travis-ci.org/jopecko/sbt-simple-url-update.svg?branch=master)](https://travis-ci.org/jopecko/sbt-simple-url-update)
+
 [sbt-web] plugin for updating the static assets which having the url refering to other asset.
 
 
@@ -10,7 +12,7 @@ Add plugin
 Add the plugin to `project/plugins.sbt`. For example:
 
 ```scala
-addSbtPlugin("org.neolin.sbt" % "sbt-simple-url-update" % "1.0.0")
+addSbtPlugin("org.github.jopecko" % "sbt-simple-url-update" % "1.1.x")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with build.sbt:
