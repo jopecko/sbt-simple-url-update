@@ -1,3 +1,12 @@
-jdk: openjdk6
 language: scala
-script: sbt scripted
+jdk: openjdk8
+sudo: false
+cache:
+  directories:
+    - $HOME/.sbt
+    - $HOME/.ivy2/cache
+before_cache:
+  - find $HOME/.sbt -name "*.lock" -type f -delete
+  - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f -delete
+script:
+  - sbt "^ scripted"
