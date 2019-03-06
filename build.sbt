@@ -2,15 +2,15 @@ sbtPlugin := true
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.4")
 
-bintrayReleaseOnPublish := false
-
 name := "sbt-simple-url-update"
 organization := "org.github.jopecko"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 resolvers += Classpaths.sbtPluginSnapshots
 scalaVersion := "2.12.8"
 crossSbtVersions := Seq("0.13.17", "1.1.6")
+
 bintrayReleaseOnPublish in ThisBuild := false
+bintrayRepository := "sbt-plugins"
 
 enablePlugins(GitVersioning)
 
